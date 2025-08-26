@@ -1,0 +1,111 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+body{ 
+    cursor: url(cursor.png), auto;
+}
+@font-face {
+    font-family: 'Plants';
+    src: url(./font/Plante.ttf);
+}
+@font-face {
+    font-family: 'Plant_mama';
+    src: url(./font/Plant\ Mama.ttf);
+}
+@font-face {
+    font-family: 'Plant_dad';
+    src: url(./font/Mollani-Regular.ttf);
+}
+.plantdad{
+    font-family: plant_dad;
+
+}
+.plantmama{
+    font-family: plant_mama;
+
+}
+.batton{
+    font-family: plants;
+}
+.homeimg{
+    position: relative;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+
+
+.icon12{
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    font-size: 50px;
+    color: white;
+    opacity: 1;
+}
+#navz{
+    z-index: 10;
+}
+.popular{
+    transition:transform 0.3s ease-in;
+}
+.popular:hover{
+    transform: scale(1.05);
+}
+.plantabt{
+    transition:transform 0.3s ease-in;
+}
+.plantabt:hover{
+    transform: scale(1.05);
+}
+.leaf3{
+    animation: opacity 5s ease-in-out infinite ;
+    animation-timeline: view;
+    opacity: 1;
+}
+@keyframes opacity{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+   
+    100%{
+        opacity: 0;
+    }
+}
+.autorotate{
+    animation: autorotate 5s linear infinite;
+
+}
+@keyframes autorotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+
+    
+}
+@media (max-width: 768px) {
+    .icon12{
+        opacity: 0;
+    }
+    
+}
+
+::-webkit-scrollbar  {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #052e16;
+
+}
+::-webkit-scrollbar-thumb {
+    background:linear-gradient(#052e16, rgb(255, 255, 37));
+    border-radius: 10px;
+}

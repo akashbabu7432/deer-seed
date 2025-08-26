@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image.png" href="./assets/logo.png">
+
+    <link rel="stylesheet" href="./deer-garden.css">
+<!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!--  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>deer garden</title>
+</head>
+<body class="bg-green-950">
+  <div class="container ">
+    <!--------------------------------------------------------------------- NAV START----------------------------- -->
+   <div id="navz" class="fixed top-0 right-0 left-0">
+    <nav class="relative bg-green-900 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10 ">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 ">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+                <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+                <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            <div class="flex shrink-0 items-center">
+              <img src="./assets/logo.png" alt="Your Company" class="h-12 w-auto " />
+            </div>
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-4">
+                <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+                <a href="#home" aria-current="page" class="rounded-md bg-gray-950/50 px-3 py-2 text-sm font-medium text-white">HOME</a>
+                <a href="#about" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white ">ABOUT</a>
+                <a href="#popular" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">POPULAR</a>
+                <a href="#team" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">TEAM</a>
+              </div>
+            </div>
+          </div>
+        
+          </div>
+        </div>
+       </div>
+    
+      <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+        <div class="space-y-1 px-2 pt-20 pb-3">
+          <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+          <a href="#home" aria-current="page" class="block rounded-md bg-gray-950/50 px-3 py-2 text-base font-medium text-white">HOME</a>
+          <a href="#about" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">ABOUT</a>
+          <a href="#popular" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">POPULAR</a>
+          <a href="#team" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">TEAM</a>
+          </div>
+        </el-disclosure>
+       </nav>
+      </div>
+ <!--------------------------------------------------------------------- NAV END----------------------------- -->
+<!--------------------------------------------------------------------- home start --------------------------------------------------------------------->
+ <div class="grid grid-row-1 grid-cols-1 md:grid-cols-2 container-fluid overflow-hidden" id="home">
+    <div class="hometext text-center mt-20 md:mt-80 text-3xl text-white text-left ml-10 md:ml-20">
+        <h1 class=" font-bold ">Plants make a <br> Positive impact on <br>Your <span class="font-normal plantdad text-6xl text-green-500">Environment</span></h1> 
+        <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing <br>elit. Illo deserunt, minus expedita neque quod itaque iure perferendis <br>similique quia quas?</p>
+        <a  href=""></a>
+        <a href=""<button class="batton bg-yellow-300 rounded-2xl text-xl p-1 px-2 text-green-600 hover:bg-transparent">Shop now<i class="fa-solid fa-cart-shopping "></i></button></a>
+        <a href=""<button class="batton bg-yellow-300 rounded-2xl text-xl p-1 px-2 text-green-600 hover:bg-transparent">Know more</button></a>
+    </div>
+    <div data-aos="fade-left"  data-aos-easing="linear" data-aos-duration="500"  ><img src="./assets/home.png" alt="" class="homeimg img-fluid md:h-130 md:mt-25 "> 
+      <i class="icon12 fa-solid fa-cannabis autorotate"></i>
+    </div>
+    <div >
+    </div>
+ </div>
+ <!--------------------------------------------------------------------- home end --------------------------------------------------------------------->
+ <!--------------------------------------------------------------------- services start --------------------------------------------------------------------->
+     <div class="row bg-white md:flex justify-between px-15 py-10 overflow-hidden ">
+      <div class="md:cols-3 border border-green-600 rounded-2xl text-center p-5 mt-10 md:mt-1">
+        <i class="fa-solid fa-truck-fast text-4xl mb-3   text-green-600"></i>
+        <h2 class="font-bold   text-green-800">Fast Delivery</h2>
+        <p class="  text-green-600">Lorem ipsum dolor sit amet consectetur, <br> adipisicing elit. Similique, quas!</p>
+      </div>
+
+      <div class="md:cols-3 border border-green-600 rounded-2xl text-center p-5 mt-10 md:mt-1 ">
+        <i class="fa-solid fa-headset text-4xl mb-3   text-green-600"></i>
+        <h2 class="font-bold   text-green-800">Great Customer Services</h2>
+        <p class="  text-green-600">Lorem ipsum dolor sit amet consectetur, <br> adipisicing elit. Similique, quas!</p>
+      </div>
+
+      <div class="md:cols-3 border border-green-600 rounded-2xl text-center p-5 mt-10 md:mt-1">
+        <i class="fa-solid fa-spa text-4xl mb-3   text-green-600"></i>
+        <h2 class="font-bold   text-green-800">Orginal Plants</h2>
+        <p class=" text-green-600">Lorem ipsum dolor sit amet consectetur, <br> adipisicing elit. Similique, quas!</p>
+      </div>
+
+      <div class="md:cols-3 border border-green-600 rounded-2xl text-center p-5 mt-10 md:mt-1">
+        <i class="fa-solid fa-dollar-sign text-4xl mb-3  text-green-600"></i>
+        <h2 class="font-bold  text-green-800">Affordable Price</h2>
+        <p class=" text-green-600">Lorem ipsum dolor sit amet consectetur, <br> adipisicing elit. Similique, quas!</p>
+      </div>
+     </div>
+
+  <!--------------------------------------------------------------------- services end --------------------------------------------------------------------->
+  <!--------------------------------------------------------------------- about us  start --------------------------------------------------------------------->
+  <div id="about">
+    <div class="container-fluid relative overflow-hidden " > 
+      <div class="absolute -top-18 -right-45 md:-top-20 md:-right-30">
+        <img src="./assets/leaf-3.png" data-aos="fade-left" class="leaf3 w-100" alt="">
+      </div>
+      <div>
+        <h1 class="plantdad text-4xl text-center text-white mt-10" >About Us</h1>
+      </div>
+      <div class="row  md:flex text-white"data-aos="fade-right">
+        <div class="md:cols-4 md:mt-5 md:ml-50">
+          <img class="plantabt w-130" src="./assets/about plant-1.png " alt="">
+        </div>
+        <div class="md:cols-8 md:mt-50 "> 
+          <h1 class="text-center md:text-justify text-2xl font-bold mb-5">Make Your Own Organic <span class="text-yellow-500 plantdad">Garden</span></h1>
+          <p class="text-center md:text-justify mb-5 md:mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Repellendus laborum ipsum quae saepe officia non porro <br> culpa provident quos ad Lorem, ipsum dolor sit amet <br> consectetur adipisicing elit. Temporibus, officia!</p>
+        </div>
+        
+      </div>
+      <div class="absolute "data-aos="fade-right" data-aos-duration="1000">
+         <img class="w-30 md:w-80 " src="./assets/leaf-2.png" alt="">
+        </div>
+      <div class="row md:flex text-white" data-aos="fade-left">
+        <div class=" md:cols-8 md:mt-50 md:ml-80 "> 
+          <h1 class="text-center md:text-justify text-2xl font-bold mb-5">Come With Us <br>Grow up Your  <span class="text-yellow-500 plantdad">Plant</span></h1>
+          <p class="text-center md:text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Repellendus laborum ipsum quae saepe officia non porro <br> culpa provident quos ad Lorem, ipsum dolor sit amet <br> consectetur adipisicing elit. Temporibus, officia!</p>
+        </div>
+        <div class="md:cols-4 md:mt-5 ">
+          <img class="plantabt w-130" src="./assets/about plant-1.png " alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--------------------------------------------------------------------- about us  end --------------------------------------------------------------------->
+  <!--------------------------------------------------------------------- popular  start --------------------------------------------------------------------->
+  <div class="container relative overflow-hidden mt-15"id="popular">
+    <div class="">
+      <h1 class="plantdad text-center text-4xl text-white mt-10  mb-15">Your Choice Plant</h1>
+    </div>
+    <img class="w-35 top-4 left-86 md:left-320 md:w-60 absolute  md:-top-3 " src="./assets/leaf-1.png" data-aos="fade-left"  alt="">
+    <div class="row md:flex justify-evenly mb-15 border mt-10  bg-slate-200 ">
+      <div data-aos="fade-right" data-aos-duration="1000" class="overflow-hidden ease-in-out my-10  text-center  md:cols-4 border border-green-500 rounded-t-3xl border-3 rounded-r-3xl bg-white">
+        <div class="flex justify-center"><img class="popular w-80 md:shadow-2xl " src="./assets/peace lilly.png" alt=""></div>
+        <h1 class="text-2xl py-5">Peace Lilly</h1>
+        <div class="flex justify-between px-5">
+          <p class="text-green-600">$5</p>
+          <a href=""><i class="fa-solid fa-cart-shopping border border-yellow-600 rounded bg-yellow-400 "></i></a>
+        </div>
+      </div>
+      
+      <div data-aos="fade-left" data-aos-duration="1000" class="overflow-hidden text-center my-10 md:cols-4 border  border-green-500 rounded-t-3xl border-3 rounded-r-3xl bg-white">
+        <div class="flex justify-center">
+          <img class="popular w-80 md:shadow-2xl " src="./assets/boston fern.png" alt="">
+        </div>
+        <h1 class="text-2xl py-5">Boston Fern</h1>
+        <div class="flex justify-between px-5">
+          <p class="text-green-600">$5</p>
+          <a href=""><i class="fa-solid fa-cart-shopping border border-yellow-600 rounded bg-yellow-400"></i></a>
+        </div>
+      </div>
+
+      <div data-aos="fade-right" data-aos-duration="1000" class="overflow-hidden text-center my-10  md:cols-4 border  border-green-500 border-3 rounded-r-3xl rounded-t-3xl  bg-white">
+        <div class="flex justify-center">
+          <img class="popular w-80 md:shadow-2xl " src="./assets/desert rose.png" alt="">
+        </div>
+        <h1 class="text-2xl py-5">Desert Rose</h1>
+        <div class="flex justify-between px-5">
+          <p class="text-green-600">$5</p>
+          <a href=""><i class="fa-solid fa-cart-shopping border border-yellow-600 rounded bg-yellow-400 "></i></a>
+        </div>
+      </div>
+
+      <div data-aos="fade-left" data-aos-duration="1000" class="overflow-hidden text-center my-10 md:cols-4 border  border-green-500 rounded-t-3xl border-3 rounded-r-3xl bg-white">
+        <div class="flex justify-center">
+          <img class="popular w-80 md:shadow-2xl" src="./assets/rubber plant.png" alt="">
+        </div>
+        <h1 class="text-2xl py-5">Rubber Plant</h1>
+        <div class="flex justify-between px-5">
+          <p class="text-green-600">$5</p>
+          <a href=""><i class="fa-solid fa-cart-shopping border border-yellow-600 rounded bg-yellow-400"></i></a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <!--------------------------------------------------------------------- popular  end --------------------------------------------------------------------->
+  <!--------------------------------------------------------------------- customer review start --------------------------------------------------------------------->
+  <div class="container " id="team">
+    <h1 class="text-center text-4xl text-white plantdad">Our Team</h1>
+    <img src="./assets/" alt="">
+    <div class="row md:flex justify-evenly">
+      <div class="col-3 border border-solid  rounded-lg mt-10 bg-white">
+        <p class="plantdad">Lorem, ipsum dolor sit amet consectetur adipisicing <br> elit. Hic, quos.</p>
+        <div class="details flex ml-3 mt-3">
+          <img class="w-10 rounded-full " src="./assets/team5.jpg" alt="jhone">
+          <div class="details-text ml-3  text-yellow-500">
+            <h1 class="text-xl">Amruth Doe</h1>
+            <p class="text-sm">CEO</p>
+          </div>
+      </div>
+      </div>
+
+      <div class="col-3 border border-solid  rounded-lg mt-10 bg-white">
+        <p class="plantdad" >Lorem, ipsum dolor sit amet consectetur adipisicing <br> elit. Hic, quos.</p>
+        <div class="details flex ml-3 mt-3">
+          <img class="w-10 rounded-full" src="./assets/team-3.jpg" alt="jhone">
+          <div class="details-text ml-3  text-yellow-500">
+            <h1 class="text-xl">Levinho</h1>
+            <p class="text-sm">Environmentalist</p>
+          </div>
+      </div>
+      </div>
+
+      <div class="col-3 border border-solid  rounded-lg mt-10 bg-white">
+        <p class="plantdad">Lorem, ipsum dolor sit amet consectetur adipisicing <br> elit. Hic, quos.</p>
+        <div class="details flex ml-3 mt-3">
+          <img class="w-10 rounded-full" src="./assets/team-4.jpg" alt="jhone">
+          <div class="details-text ml-3  text-yellow-500">
+            <h1 class="text-xl">Ruth williams</h1>
+            <p class="text-sm">Planter</p>
+          </div>
+      </div>
+      </div>
+
+      <div class="col-3 border border-solid  rounded-lg mt-10 bg-white">
+        <p class="plantdad">Lorem, ipsum dolor sit amet consectetur adipisicing <br> elit. Hic, quos.</p>
+        <div class="details flex ml-3 mt-3">
+          <img class="w-10 rounded-full" src="./assets/team-1.jpg" alt="jhone">
+          <div class="details-text ml-3 text-yellow-500">
+            <h1 class="text-xl">Mark Donalds</h1>
+            <p class="text-sm">Builder</p>
+          </div>
+      </div>
+      </div>
+      
+    </div>
+
+    
+  </div>
+  <!--------------------------------------------------------------------- customer review  end --------------------------------------------------------------------->
+  <!--------------------------------------------------------------------- footer start --------------------------------------------------------------------->
+  <footer class="bg-black relative overflow-hidden">
+    <div class="flex justify-center mt-5 ">
+      <div class="bg-white justify-center items-center rounded-xl">
+        <h1 class="ml-3">Subscribe To Our News Letter</h1>
+        <input type="text" class="md:w-200 px-5 py-2 rounded-lg bg-gray-200" placeholder="Enter Your Email" >
+        <a href=""><button class="bg-green-400 rounded-2xl p-3">Subscribe</button></a>
+      </div>
+    </div>
+    <div class="flex justify-center text-white mt-10">
+      <i class="fa-brands fa-facebook-f  hover:text-orange-600""></i>
+      <i class="fa-brands fa-twitter  hover:text-orange-600""></i>
+      <i class="fa-brands fa-instagram  hover:text-orange-600""></i>
+      <i class="fa-brands fa-linkedin-in  hover:text-orange-600""></i>
+      <i class="fa-brands fa-youtube  hover:text-orange-600""></i>
+      
+    </div>
+    <img src="./assets/—Pngtree—tropical leaves_5647269.png" class="w-50 absolute md:left-331 md:top-34 left-72 top-14"  alt="">
+    <div class="row flex justify-evenly" >
+      <div class="col-6 ">
+        <img class="md:w-30 w-15" src="./assets/logo.png" alt="">
+      </div>
+      <div class="col-6 text-white z-10 ">
+        <h1 class="text-white text-2xl">Contact Us</h1>
+        <p>+7736919862</p>
+        <p>deerseed@gmail.com</p>
+        <p>124 tailwind ave.css city,html land 5649 code </p>
+        <p class="text-white">Copyright © 2021 PlantDad. All rights reserved.</p>
+      </div>
+    </div>
+    
+
+  </footer>
+
+
+
+
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+      AOS.init();
+    </script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+
+
+</html>
